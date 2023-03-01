@@ -59,6 +59,7 @@ try:
 		    num = int(input("Введите первое число: "))
 		    num_2 = int(input("Введите второе число: "))
 		    print(f"{num} / {num_2} =", divide(num, num_2))
+		    break
 		else:
 		    attempts-=1
 		    print(f"Некорректный ввод. Осталось {attempts} попыток.")
