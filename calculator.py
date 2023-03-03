@@ -38,32 +38,32 @@ print_arithmetic_sign = "\
 
 attempts = 3 # Количество попыток
 try:
-	while attempts > 0: # Цикл для подсчета попыток
-		arithmetic_sign = input(print_arithmetic_sign)
-		if arithmetic_sign == '+':
-			num = int(input("Введите первое число: "))
-			num_2 = int(input("Введите второе число: "))
-			print(f"{num} + {num_2} =", add(num, num_2))
-			break
-		elif arithmetic_sign == '-':
-			num = int(input("Введите первое число: "))
-			num_2 = int(input("Введите второе число: "))
-			print(f"{num} - {num_2} =", subtract(num, num_2))
-			break
-		elif arithmetic_sign == '*':
-			num = int(input("Введите первое число: "))
-			num_2 = int(input("Введите второе число: "))
-			print(f"{num} * {num_2} =", multiply(num, num_2))
-			break
-		elif arithmetic_sign == '/':
-			num = int(input("Введите первое число: "))
-			num_2 = int(input("Введите второе число: "))
-			print(f"{num} / {num_2} =", divide(num, num_2))
-			break
-		else:
-			attempts-=1
-			print(f"Некорректный ввод. Осталось {attempts} попыток.")
+    while attempts > 0: # Цикл для подсчета попыток
+        arithmetic_sign = input(print_arithmetic_sign)
+        if arithmetic_sign == '+':
+            num = int(input("Введите первое число: "))
+            num_2 = int(input("Введите второе число: "))
+            print(f"{num} + {num_2} =", add(num, num_2))
+            break
+        elif arithmetic_sign == '-':
+            num = int(input("Введите первое число: "))
+            num_2 = int(input("Введите второе число: "))
+            print(f"{num} - {num_2} =", subtract(num, num_2))
+            break
+        elif arithmetic_sign == '*':
+            num = int(input("Введите первое число: "))
+            num_2 = int(input("Введите второе число: "))
+            print(f"{num} * {num_2} =", multiply(num, num_2))
+            break
+        elif arithmetic_sign == '/':
+            num = int(input("Введите первое число: "))
+            num_2 = int(input("Введите второе число: "))
+            print(f"{num} / {num_2} =", divide(num, num_2))
+            break
+        else:
+            attempts-=1
+            print(f"Некорректный ввод. Осталось {attempts} попыток.")
 except ZeroDivisionError: # Деление на ноль
-	print(f"Нельзя делить на {num_2}")
+    print(f"Нельзя делить на {num_2}")
 except ValueError: # Ошибка значений
-	print(f"Принимаются только числа!")
+    print(f"Принимаются только числа!")
